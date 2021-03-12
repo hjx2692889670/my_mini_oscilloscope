@@ -1,0 +1,9 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\HARDWARE -I.\HARDWARE\ADC -I.\HARDWARE\DAC -I.\HARDWARE\IIC -I.\HARDWARE\KEY -I.\HARDWARE\LED -I.\HARDWARE\OLED -I.\SYSTEM\delay -I.\SYSTEM\sys -I.\SYSTEM\usart -I.\USR -I.\HARDWARE\DMA -I.\HARDWARE\TIMER
+-I "E:\workfile\myMiniOs(no os)\RTE"
+-I "E:\workfile\myMiniOs(no os)\RTE\Device\STM32F103ZE"
+-I E:\KEIL\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\KEIL\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I E:\KEIL\Keil\STM32F1xx_DFP\1.0.5\Device\StdPeriph_Driver\inc
+-I E:\KEIL\Keil\STM32F1xx_DFP\1.0.5\RTE_Driver
+-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "USR\main.c"
